@@ -11,11 +11,17 @@ week4_data <- as.data.frame(Titanic)
 #See the top rows of the data
 #TASK: Write the function to see the top rows of the data
 install.packages("tibble")
+
+###missing the library code to call the tibble package, will get an error if not called
+
+#also, while you can see the top 10 rows using tibble, there is a more efficient code to view the top few rows of the data
 as_tibble(Titanic)
 
 #Install and call the package dplyr
 #TASK: Write the functions to install and call dplyr
 install.packages("dplyr")
+
+###missing the library code to call the dplyr package. Can't use it until you 'call' it
 
 #Let's just see the Survived and Sex columns
 #Task: Write the function to 'select' the Survived and Sex columns 
@@ -51,6 +57,9 @@ arranged_data <- arrange(sextogender, Gender)
   
 #Let's see how many people were examined in the dataset (total the frequency in the original dataframe)
 #TASK: Sum the Freq column
+
+###You are not summing the Freq column as instructed. You are only counting the number of rows in the dataframe. 
+
 #TASK: After you run it, write the total here:_32_
 total_folks <- nrow(week4_data)
 print(total_folks)
